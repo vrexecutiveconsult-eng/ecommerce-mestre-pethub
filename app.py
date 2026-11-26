@@ -1193,7 +1193,7 @@ def render_login_screen() -> None:
             """
             <div class="login-box">
                 <div style="display:flex; align-items:center; gap:0.65rem; margin-bottom:0.6rem;">
-                    <span style="font-size:1.7rem;">🐾</span>
+                    <span style="font-size:1.7rem;">🕵️</span>
                     <div>
                         <div style="font-size:1.35rem; font-weight:800; color:#F8FAFC; line-height:1.15;">
                             Radar Pet Pro
