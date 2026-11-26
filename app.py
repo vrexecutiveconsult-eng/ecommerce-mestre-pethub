@@ -857,7 +857,7 @@ def send_telegram_test_message(
     endpoint = f"https://api.telegram.org/bot{token}/sendMessage"
     now_str = get_brasilia_now().strftime("%d/%m/%Y %H:%M:%S")
     msg_html = (
-        f"🔔 <b>PetPulse BI · Teste de Conexão</b>\n"
+        f"🔔 <b>Radar Pet Pro · Teste de Conexão</b>\n"
         f"Olá, <b>{html_lib.escape(nome_exibicao)}</b> (<code>@{html_lib.escape(usuario)}</code>)!\n"
         f"Seu canal de alertas inteligentes do monitoramento horário está ativo e validado.\n"
         f"<i>Enviado em {html_lib.escape(now_str)} (BRT)</i>"
@@ -1196,7 +1196,7 @@ def render_login_screen() -> None:
                     <span style="font-size:1.7rem;">🐾</span>
                     <div>
                         <div style="font-size:1.35rem; font-weight:800; color:#F8FAFC; line-height:1.15;">
-                            PetPulse BI
+                            Radar Pet Pro
                         </div>
                         <div style="font-size:0.82rem; color:#38BDF8; font-weight:600;">
                             Inteligência Executiva para E-commerce Pet
@@ -1257,7 +1257,7 @@ def generate_executive_pdf(
     pdf.set_text_color(248, 250, 252)
     pdf.set_font("Helvetica", "B", 16)
     pdf.set_xy(12, 10)
-    pdf.cell(0, 8, safe_latin1("PetPulse BI - Relatorio Executivo de Performance"), ln=True)
+    pdf.cell(0, 8, safe_latin1("Radar Pet Pro - Relatorio Executivo de Performance"), ln=True)
     pdf.set_font("Helvetica", "", 10)
     pdf.set_x(12)
     now_str = get_brasilia_now().strftime("%d/%m/%Y %H:%M")
@@ -4766,7 +4766,7 @@ def render_notificacoes(
 
 def main() -> None:
     st.set_page_config(
-        page_title="PetPulse BI — E-commerce Pet",
+        page_title="Radar Pet Pro — E-commerce Pet",
         page_icon="🐾",
         layout="wide",
         initial_sidebar_state="expanded",
@@ -4809,7 +4809,7 @@ def main() -> None:
         st.markdown(
             f"""
             <div class="glass-card" style="padding: 1rem 1.1rem; margin-bottom: 1rem;">
-                <div style="font-size:1.15rem; font-weight:800; color:#F8FAFC;">🐾 PetPulse BI</div>
+                <div style="font-size:1.15rem; font-weight:800; color:#F8FAFC;">🕵️ Radar Pet Pro</div>
                 <div style="font-size:0.8rem; color:#38BDF8; margin-top:0.15rem;">Sessão Isolada</div>
                 <div style="font-size:0.9rem; color:#E2E8F0; font-weight:600; margin-top:0.55rem;">
                     👤 {html_lib.escape(nome_exibicao)}
