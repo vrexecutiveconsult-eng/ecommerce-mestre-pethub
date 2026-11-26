@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+gspread
+google-auth
+requests
+beautifulsoup4
+google-genai
+fpdf2
+lxml
+pytz
